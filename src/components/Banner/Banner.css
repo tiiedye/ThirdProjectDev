@@ -1,0 +1,15 @@
+.banner {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    background-color: black;
+}
+
+.bannerImg {
+    height: 400px;
+}
+
+.mainBanner {
+    text-align: center;
+}
