@@ -2,7 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Banner from "./components/Banner/Banner"
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import Projects from "./components/Projects/Projects"
+import Projects from "./components/Projects/Projects";
+import About from "./components/About/About";
 import "./App.css";
 
 const theme = createMuiTheme({
@@ -30,6 +31,7 @@ function App() {
           <Banner />
 
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/about" component={About} />
         </div>
       </MuiThemeProvider>
     </Router>

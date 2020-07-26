@@ -6,6 +6,7 @@ const projectMap = [
     {
         id: 1,
         name: "Once Upon an Adventure",
+        img: require("../../assets/adventure-home.png"),
         description: "Once Upon an Adventure is an interactive learning experience. Based on both RPG's and Choose Your Own Adventure games, Once Upon an Adventure offers a variety of learning games that any child will enjoy.",
         deployed: "https://onceuponanadventure.herokuapp.com/",
         repo: "https://github.com/annaxgrace/once-upon-an-adventure"
@@ -21,6 +22,8 @@ function Projects() {
                 <div className="mappedItems" key={item.id}>
                     <h3>{item.name}</h3>
                     <p>
+                        <img src={item.img} alt={item.name} className="projectImg" />
+                        <br />
                         {item.description}
                     </p>
 
