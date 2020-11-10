@@ -17,7 +17,7 @@ const projectMap = [
         name: "Along With Me",
         img: require("../../assets/alongwithme.png"),
         description: "This audiobook companion app takes the text of your audiobook and checks for specific words for background noise. Really transport yourself! When our application registers the word 'fire' hear a crackling fireplace. Set the specific sounds you want to hear and the volume in the settings.",
-        deployed: "https://tiiedye.github.io/ThirdProjectDev/UnderConstruction",
+        deployed: false,
         repo: "https://github.com/eh4git/Along-With-Me",
         construction: true
     }
@@ -39,7 +39,11 @@ function Projects() {
 
                     <ButtonGroup size="small" aria-label="small outlined button group">
                         <a href={item.deployed} target="_blank" rel="noopener noreferrer">
-                            <Button>Deployed</Button>
+                           {!item.deployed ? ( 
+                               ""
+                           ):(
+                            <Button>Deployed</Button>  
+                           )} 
                         </a>
 
                         <a href={item.repo} target="_blank" rel="noopener noreferrer">
