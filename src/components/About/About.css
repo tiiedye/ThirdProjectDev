@@ -1,0 +1,11 @@
+.icon {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.teamContainer {
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+}
