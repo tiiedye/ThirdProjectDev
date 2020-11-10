@@ -1,6 +1,13 @@
 import React from "react";
 import "./Projects.css";
 import {Button, ButtonGroup} from "@material-ui/core"
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+    underline: {
+        color: '#00ff8b'
+    },
+  }));
 
 const projectMap = [
     {
@@ -24,6 +31,7 @@ const projectMap = [
 ]
 
 function Projects() {
+    const classes = useStyles();
     return(
         <div className="projectsDiv">
             <h1>PROJECTS</h1>
@@ -38,7 +46,7 @@ function Projects() {
                     </p>
 
                     <ButtonGroup size="small" aria-label="small outlined button group">
-                        <a href={item.deployed} target="_blank" rel="noopener noreferrer">
+                        <a href={item.deployed} className={classes.underline} target="_blank" rel="noopener noreferrer">
                            {!item.deployed ? ( 
                                ""
                            ):(
@@ -46,7 +54,7 @@ function Projects() {
                            )} 
                         </a>
 
-                        <a href={item.repo} target="_blank" rel="noopener noreferrer">
+                        <a href={item.repo} className={classes.underline} target="_blank" rel="noopener noreferrer">
                             <Button>Repository</Button>
                         </a>
                     </ButtonGroup>

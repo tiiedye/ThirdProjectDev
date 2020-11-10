@@ -11,6 +11,13 @@ const useStyles = makeStyles((theme) => ({
       padding: theme.spacing(2),
       textAlign: 'center',
       color: theme.palette.text.secondary,
+      height: 450
+    },
+    about: {
+        height: 160
+    },
+    underline: {
+        color: '#00ff8b'
     },
   }));
 
@@ -19,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
           id: 1,
           img: "https://avatars2.githubusercontent.com/u/61895571?s=460&u=51c1a5027c2ee815104a12b2aded2bcf51b2c6b7&v=4",
           name: "Anna Conover",
-          about: "I'm a full-stack developer living in Long Beach, California. Currently looking for opportunities!",
+          about: "Full-Stack Developer living in Oklahoma who enjoys puzzles, boardgames, DND, and animals! ",
           portfolio: "https://annaxgrace.github.io/Portfolio/#/",
           github: "https://github.com/AnnaxGrace"
       },
@@ -46,14 +53,7 @@ const useStyles = makeStyles((theme) => ({
           about: "I'm a full-stack developer in Sylmar, California. Currently looking for opportunities!",
           portfolio: "https://vinnielo.github.io/React-Portfolio/",
           github: "https://github.com/vinnielo"
-      },
-    //   {
-    //     id: 5,
-    //     img: "https://avatars0.githubusercontent.com/u/63328108?s=460&u=c51d24d76e55fea2edb633efed6d2306ff96167f&v=4",
-    //     name: "Tony Garces",
-    //     portfolio: "#",
-    //     github: "https://github.com/T-nyG"
-    // }
+      }
   ]
 
 function About() {
@@ -70,14 +70,14 @@ function About() {
                                 <br />
                                 <h4>{team.name}</h4>
 
-                                <p>{team.about}</p>
+                                <p className={classes.about}>{team.about}</p>
 
                                 <ButtonGroup size="small" aria-label="small outlined button group">
-                                    <a href={team.portfolio} target="_blank" rel="noopener noreferrer">
+                                    <a href={team.portfolio} className={classes.underline} target="_blank" rel="noopener noreferrer">
                                         <Button>Portfolio</Button>
                                     </a>
 
-                                    <a href={team.github} target="_blank" rel="noopener noreferrer">
+                                    <a href={team.github} className={classes.underline} target="_blank" rel="noopener noreferrer">
                                         <Button>GitHub</Button>
                                     </a>
                                 </ButtonGroup>
