@@ -30,9 +30,9 @@ function App() {
       <MuiThemeProvider theme={theme}>
         <div>
           <Banner />
+          <Route exact path="/ThirdProjectDev" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/team" component={Team} />
-          <Route exact path="/about" component={About} />
         </div>
       </MuiThemeProvider>
     </Router>

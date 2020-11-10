@@ -15,7 +15,7 @@ function Banner() {
                         <Button>Projects</Button>
                     </Link>
 
-                    <Link to="/about">
+                    <Link to="/ThirdProjectDev">
                         <Button>About Us</Button>
                     </Link>
 
