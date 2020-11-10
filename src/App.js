@@ -4,6 +4,7 @@ import Banner from "./components/Banner/Banner"
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
+import Team from './components/Team/Team';
 import "./App.css";
 
 const theme = createMuiTheme({
@@ -29,8 +30,8 @@ function App() {
       <MuiThemeProvider theme={theme}>
         <div>
           <Banner />
-
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/team" component={Team} />
           <Route exact path="/about" component={About} />
         </div>
       </MuiThemeProvider>
