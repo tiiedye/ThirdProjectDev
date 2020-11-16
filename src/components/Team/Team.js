@@ -2,6 +2,7 @@ import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import { Paper, Grid, Button, ButtonGroup } from '@material-ui/core';
 import "./Team.css"
+import vinnie from "../../assets/vinnie.JPG"
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -49,7 +50,7 @@ const teamInfo = [
     },
     {
         id: 4,
-        img: "https://avatars0.githubusercontent.com/u/60115473?s=460&u=4252882a1a888bde88434210e91cec7732b3e9ba&v=4",
+        img: vinnie,
         name: "Vinnie Lopez",
         about: "I'm a full-stack developer in Sylmar, California. Currently looking for opportunities!",
         portfolio: "https://vinnielo.github.io/React-Portfolio/",
