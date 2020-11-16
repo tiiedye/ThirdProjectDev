@@ -30,7 +30,7 @@ function About() {
     
                         <h3>Competencies</h3>
                         <p>
-                        Technologies are: CSS, HTML, JavaScript, React, DOM, AJAX, HTTP, MYSQL, MongoDB, Bootstrap, jQuery, Git, materialize
+                        Technologies are: CSS, HTML, JavaScript, React, DOM, AJAX, HTTP, MYSQL, MongoDB, Bootstrap, jQuery, Git, Materialize, WordPress, Firebase
                         </p>
             
                         <h3>Hire Us</h3>
